@@ -811,12 +811,13 @@ class wpdb {
 	 */
 	public function set_sql_mode( $modes = array() ) {
 		if ( empty( $modes ) ) {
-			if ( $this->use_mysqli ) {
+			/*
+            if ( $this->use_mysqli ) {
 				$res = mysqli_query( $this->dbh, 'SELECT @@SESSION.sql_mode' );
 			} else {
 				$res = mysql_query( 'SELECT @@SESSION.sql_mode', $this->dbh );
 			}
-
+            */
 			if ( empty( $res ) ) {
 				return;
 			}
