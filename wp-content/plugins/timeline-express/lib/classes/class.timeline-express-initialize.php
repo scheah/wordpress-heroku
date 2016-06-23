@@ -81,6 +81,7 @@ class Timeline_Express_Initialize {
 		 * if not, re-run our query and setup the transient
 		 * @since 1.2
 		 */
+         delete_transient( 'timeline-express-query-' . ( isset( $post->ID ) ? $post->ID : '' ) . $shortcode_iteration );
 		if ( false === ( $announcement_query = get_transient( 'timeline-express-query-' . ( isset( $post->ID ) ? $post->ID : '' ) . $shortcode_iteration ) ) ) {
 			/* Setup the announcement args */
 			$announcement_args = apply_filters( 'timeline_express_announcement_query_args', self::timeline_express_query_args( $compare_sign, $atts['order'], $atts ), $post, $atts );
