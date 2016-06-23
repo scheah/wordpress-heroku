@@ -81,7 +81,8 @@ if ( ! function_exists( 'highwind_main_navigation' ) ) {
 			); ?>
 
 			<?php do_action( 'highwind_navigation_bottom' ); ?>
-
+            <div class="highwind-navigation"><ul id="menu-top-nav" class="menu"><li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="http://swcheah.herokuapp.com#about">About</a></li>
+            <li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="http://swcheah.herokuapp.com#projects">Projects</a></li>
 		</nav><!-- /.main-nav -->
 
 		<?php do_action( 'highwind_navigation_after' ); ?>
