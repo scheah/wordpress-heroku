@@ -44,7 +44,7 @@ if ( ! function_exists( 'highwind_site_title' ) ) {
 				?>
 				<h1 class="site-title"><?php esc_attr( bloginfo( 'name' ) ); ?></h1>
 				<h2 class="site-description"><?php esc_attr( bloginfo( 'description' ) ); ?></h2>
-                <?php echo do_shortcode("[cn-social-icon]"); ?>
+                <ul id="" class="cnss-social-icon " style="text-align:center;"><a href="http://127.0.0.1:8000/wordpress/" title="Sebastian Cheah" rel="home" class="site-intro"></a><li class="LinkedIn" style=" display:inline-block;"><a href="http://127.0.0.1:8000/wordpress/" title="Sebastian Cheah" rel="home" class="site-intro"></a><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/sebastian-w-cheah-1ab63326"><img src="./index_files/linkedin.svg" border="0" width="32" alt="LinkedIn" style=" margin:2px;"></a></li><li class="GoogleDrive" style=" display:inline-block;"><a target="_blank" title="GoogleDrive" href="https://drive.google.com/open?id=0B6Qli1AAMMrKZkM0UHhiQ2VXVWc"><img src="./index_files/googledrive.svg" border="0" width="32" alt="GoogleDrive" style=" margin:2px;"></a></li><li class="Github" style=" display:inline-block;"><a target="_blank" title="Github" href="https://github.com/scheah"><img src="./index_files/github.svg" border="0" width="32" alt="Github" style=" margin:2px;"></a></li></ul>
 			</a>
 		<?php
 	}
