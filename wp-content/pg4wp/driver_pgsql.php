@@ -386,6 +386,13 @@
 			$logto = 'SHOWTABLES';
 			$sql = 'SELECT tablename FROM pg_tables WHERE schemaname = \'public\';';
 		}
+        // Rewriting SHOW FULL COLUMN
+        elseif( 0 === strpos($sql, 'SHOW FULL COLUMN'))
+        {
+            $logto = 'SHOWFULL';
+            $sql = str_replace( 'SHOW FULL COLUMNS FROM ', 'SELECT column_name FROM information_schema.columns WHERE table_name = ', $sql);
+            $sql = str_replace( '`', "'", $sql );
+        }
 		// Rewriting optimize table
 		elseif( 0 === strpos($sql, 'OPTIMIZE TABLE'))
 		{
