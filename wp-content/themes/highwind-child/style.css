@@ -16,7 +16,13 @@ Modular Scale: http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
 Highwind WordPress Theme, Copyright 2013 jameskoster.co.uk
 Highwind is distributed under the terms of the GNU GPL
 */
-
+.site-intro .avatar {
+    margin: 0 auto;
+}
+.site-intro .site-title,
+.site-intro .site-description {
+    text-align: center;
+}
 @media only screen and (min-width: 769px) {
     .content {
         width: auto;
