@@ -19,7 +19,7 @@ Highwind is distributed under the terms of the GNU GPL
 
 @media only screen and (min-width: 769px) {
     .content {
-        width: 100%;
+        width: auto;
     }
     .sidebar {
         display: none;
